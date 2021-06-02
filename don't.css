@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+#wrapper {
+    width: auto;
+}
+
+#headerTitle {
+    width: 100%;
+    background-color: #404040;
+    height: 150px;
+    position: relative;
+}
+
+#titles {
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+}
+
+#titles h1 {
+    letter-spacing: 5px;
+    font-size: 40px;
+    text-transform: bold;
+}
+
+#menu {
+   float: left;
+   background-color: rgb(112,128,144);
+   height: 812px;
+   width: 30%;
+}
+
+h3 {
+    color: white;
+    letter-spacing: 3px;
+    padding: 5px 0px 12px 0px;
+}
+
+h3 span {
+    background-color: #696969;
+    padding: 6px 12px 5px 12px;
+}
+
+#dontMenu {
+    position: relative ;
+    padding-top: 25px;
+}

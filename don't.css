@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    width: 100%;
 }
 
 #wrapper {
@@ -29,24 +30,42 @@
 }
 
 #menu {
-   float: left;
+   /* float: left;
+   display: flex; */
    background-color: rgb(112,128,144);
-   height: 812px;
+   max-height: 823px;
    width: 30%;
+   padding-top: 6px;
+   position: absolute;
+   list-style: none;
 }
+
+/* #currentDonts h3 {
+    position: relative;
+} */
 
 h3 {
     color: white;
     letter-spacing: 3px;
-    padding: 5px 0px 12px 0px;
+    /* width: 30%; */
+    /* margin-left: .1vw; */
 }
 
 h3 span {
     background-color: #696969;
     padding: 6px 12px 5px 12px;
+    
+}
+
+#dailyDontsList li {
+    /* position: relative; */
+    /* padding-left: 150px; */
+    display: flex;
+    /* float: right; */
 }
 
 #dontMenu {
-    position: relative ;
+    /* position: relative; */
     padding-top: 25px;
 }
+

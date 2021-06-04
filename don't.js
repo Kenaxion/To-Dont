@@ -1,21 +1,38 @@
+const bootstrap = require("bootstrap");
+
 const taskList = document.getElementById("dailyDontsList");
 
 
-let task = {
+let tasks = [
+   {
    "date": Date.now,
    "task": "test",
    "done": false,
+   },
+   {
+      "date": Date.now,
+      "task": "test2",
+      "done": false,
+   },
+]
+
+
+tasks.forEach(element => {
+   const li = document.createElement("li");
+   li.textContent = element.task;
+   const checkbox = document.createElement("input");
+   checkbox.type = "checkbox";
+   checkbox.checked = element.done;
+
+   checkbox.addEventListener("click", listenCheckbox)
+
+   li.appendChild(checkbox);
+   taskList.appendChild(li);
+});
+
+function listenCheckbox(e) {
+   console.log(e);
 }
-
-let tasks = [{}]
-
-const li = document.createElement("li")
-li.textContent = task.task;
-const checkbox = document.createElement("input");
-checkbox.type = "checkbox";
-checkbox.checked = task.done;
-li.appendChild(checkbox);
-taskList.appendChild(li);
 
 //animate header
 
